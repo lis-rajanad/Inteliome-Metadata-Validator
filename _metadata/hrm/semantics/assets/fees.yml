@@ -1,0 +1,120 @@
+folder: hrm
+type: dimension
+source:
+  schema.fees:
+    columns:
+      - category
+      - customer_name
+      - geo
+      - revenue
+      - customer_tier
+      - name
+      - client_short_name
+      - project
+      - line_of_business
+      - project_name_link
+      - month
+      - opportunity_status
+
+attributes:
+  project_name_link:
+    name: project name link
+    synonym:
+      - project
+
+  revenue:
+    name: revenue
+    synonym:
+      - income
+      - fees
+    calculation: "[revenue]"
+    function: sum
+
+  planned_fees:
+    name: planned fee
+    synonym:
+      - planned revenue
+    desc: "Planned Revenue"
+    calculation: "[revenue]"
+    filter:
+      - "[name] like 'Plan-%'"
+
+  actual_fees:
+    name: actual fees
+    desc: "Actual revenue from the project"
+    calculation: "[name]"
+    filter:
+      - "[category] = 'Fees'"
+      - "[name] like '%- Fees'"
+
+  labour cost:
+    name: labour cost
+    desc: "Cost of Labour"
+    calculation: "[name]"
+    filter:
+      - "[category] = 'Labour Cost'"
+      - "[name] like '%- Labour Cost'"
+
+  billable_expense_amount:
+    name: billable expense amount
+    desc: "expenses which are billed to the client"
+    synonym:
+      - billable expense
+    calculation: "[revenue]"
+    filter:
+      - "[name] = 'Billable Expenses'"
+    function: sum
+
+  non_billable_expense_amount:
+    name: non-billable expense amount
+    desc: "expenses which are not billed to the client"
+    calculation: "[revenue]"
+    filter:
+      - "[name] = 'Non-Billable Expenses'"
+    function: sum
+
+  client:
+    name: client_short_name
+    calculation: "[client_short_name]"
+
+  geo:
+    name: geo
+    calculation: "[geo]"
+    synonym:
+     - geographical region
+     - region
+     - geography
+
+  diamond:
+    name: diamond
+    calculation: "[customer_tier]"
+    filter:
+      - "[customer_tier] = 'Diamond'"
+
+  titanium:
+    name: titanium
+    calculation: "[customer_tier]"
+    filter:
+      - "[customer_tier] = 'Titanium'"
+
+  line_of_business:
+    name: line of business
+    synonym:
+      - LOB
+
+  month:
+    desc: 'shortened month description of the fee entry. For example, JAN, FEB etc.'
+
+  opportunity_status:
+    name: opportunity status
+    synonym:
+      - Opportunity Stage
+    desc: "contains status code and status description. Example values include: 11-Completed, D-Dead, L-Lost, 01-Early Stage-Prospecting"
+    calculation: "[opportunity_status]"
+
+  expense_by_billability:
+    name: total expense
+    desc: 'contains both billable and non billable expense'
+    include:
+      - billable_expense_amount
+      - non_billable_expense_amount

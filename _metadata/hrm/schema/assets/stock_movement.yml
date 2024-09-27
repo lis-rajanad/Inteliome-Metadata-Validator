@@ -1,0 +1,465 @@
+subject_area: retail stock movement
+table_info:
+  - table: dm_rtl_stock_movement
+    joins: []
+columns:
+  item:
+    name: Item
+    type: varchar
+    column: item
+    desc: Item
+    primary_key: false
+  location_id:
+    name: Location ID
+    type: varchar
+    column: location_id
+    desc: Location ID
+    primary_key: false
+  date:
+    name: Date
+    type: date
+    column: date
+    desc: Date
+    primary_key: false
+  item_description:
+    name: Item Description
+    type: varchar
+    column: item_description
+    desc: Item Description
+    primary_key: false
+  subclass_id:
+    name: Subclass ID
+    type: varchar
+    column: subclass_id
+    desc: Subclass ID
+    primary_key: false
+  subclass_description:
+    name: Subclass Description
+    type: varchar
+    column: subclass_description
+    desc: Subclass Description
+    primary_key: false
+  class_id:
+    name: Class ID
+    type: varchar
+    column: class_id
+    desc: Class ID
+    primary_key: false
+  class_description:
+    name: Class Description
+    type: varchar
+    column: class_description
+    desc: Class Description
+    primary_key: false
+  department_id:
+    name: Department ID
+    type: varchar
+    column: department_id
+    desc: Department ID
+    primary_key: false
+  department_description:
+    name: Department Description
+    type: varchar
+    column: department_description
+    desc: Department Description
+    primary_key: false
+  group_id:
+    name: Group ID
+    type: varchar
+    column: group_id
+    desc: Group ID
+    primary_key: false
+  group_description:
+    name: Group Description
+    type: varchar
+    column: group_description
+    desc: Group Description
+    primary_key: false
+  division_id:
+    name: Division ID
+    type: varchar
+    column: division_id
+    desc: Division ID
+    primary_key: false
+  division_description:
+    name: Division Description
+    type: varchar
+    column: division_description
+    desc: Division Description
+    primary_key: false
+  location_description:
+    name: Location Description
+    type: varchar
+    column: location_description
+    desc: Location Description
+    primary_key: false
+  district_id:
+    name: District ID
+    type: varchar
+    column: district_id
+    desc: District ID
+    primary_key: false
+  district_description:
+    name: District Description
+    type: varchar
+    column: district_description
+    desc: District Description
+    primary_key: false
+  region_id:
+    name: Region ID
+    type: varchar
+    column: region_id
+    desc: Region ID
+    primary_key: false
+  region_description:
+    name: Region Description
+    type: varchar
+    column: region_description
+    desc: Region Description
+    primary_key: false
+  geozone_id:
+    name: Geozone ID
+    type: varchar
+    column: geozone_id
+    desc: Geozone ID
+    primary_key: false
+  geozone_description:
+    name: Geozone Description
+    type: varchar
+    column: geozone_description
+    desc: Geozone Description
+    primary_key: false
+  area_id:
+    name: Area ID
+    type: varchar
+    column: area_id
+    desc: Area ID
+    primary_key: false
+  area_description:
+    name: Area Description
+    type: varchar
+    column: area_description
+    desc: Area Description
+    primary_key: false
+  chain_id:
+    name: Chain ID
+    type: varchar
+    column: chain_id
+    desc: Chain ID
+    primary_key: false
+  chain_description:
+    name: Chain Description
+    type: varchar
+    column: chain_description
+    desc: Chain Description
+    primary_key: false
+  channel_id:
+    name: Channel ID
+    type: varchar
+    column: channel_id
+    desc: Channel ID
+    primary_key: false
+  channel_description:
+    name: Channel Description
+    type: varchar
+    column: channel_description
+    desc: Channel Description
+    primary_key: false
+  banner_id:
+    name: Banner ID
+    type: varchar
+    column: banner_id
+    desc: Banner ID
+    primary_key: false
+  banner_description:
+    name: Banner Description
+    type: varchar
+    column: banner_description
+    desc: Banner Description
+    primary_key: false
+  inv_type:
+    name: Inventory Type
+    type: varchar(1)
+    column: inv_type
+    desc: Inventory Type
+    primary_key: false
+  sales_quantity:
+    name: Sales Quantity
+    type: number
+    column: sales_quantity
+    desc: Sales Quantity
+  sales_cost:
+    name: Sales Cost
+    type: number
+    column: sales_cost
+    desc: Sales Cost
+  sales_amount:
+    name: Sales Amount
+    type: number
+    column: sales_amount
+    desc: Sales Amount
+  regular_sales_quantity:
+    name: Regular Sales Quantity
+    type: number
+    column: regular_sales_quantity
+    desc: Regular Sales Quantity
+  regular_sales_cost:
+    name: Regular Sales Cost
+    type: number
+    column: regular_sales_cost
+    desc: Regular Sales Cost
+  regular_sales_amount:
+    name: Regular Sales Amount
+    type: number
+    column: regular_sales_amount
+    desc: Regular Sales Amount
+  promotional_sales_quantity:
+    name: Promotional Sales Quantity
+    type: number
+    column: promotional_sales_quantity
+    desc: Promotional Sales Quantity
+  promotional_sales_cost:
+    name: Promotional Sales Cost
+    type: number
+    column: promotional_sales_cost
+    desc: Promotional Sales Cost
+  promotional_sales_amount:
+    name: Promotional Sales Amount
+    type: number
+    column: promotional_sales_amount
+    desc: Promotional Sales Amount
+  clearance_sales_quantity:
+    name: Clearance Sales Quantity
+    type: number
+    column: clearance_sales_quantity
+    desc: Clearance Sales Quantity
+  clearance_sales_cost:
+    name: Clearance Sales Cost
+    type: number
+    column: clearance_sales_cost
+    desc: Clearance Sales Cost
+  clearance_sales_amount:
+    name: Clearance Sales Amount
+    type: number
+    column: clearance_sales_amount
+    desc: Clearance Sales Amount
+  return_sales_quantity:
+    name: Return Sales Quantity
+    type: number
+    column: return_sales_quantity
+    desc: Return Sales Quantity
+  return_sales_cost:
+    name: Return Sales Cost
+    type: number
+    column: return_sales_cost
+    desc: Return Sales Cost
+  return_sales_amount:
+    name: Return Sales Amount
+    type: number
+    column: return_sales_amount
+    desc: Return Sales Amount
+  total_discount_amount:
+    name: Total Discount Amount
+    type: number
+    column: total_discount_amount
+    desc: Total Discount Amount
+  employee_discount_amount:
+    name: Employee Discount Amount
+    type: number
+    column: employee_discount_amount
+    desc: Employee Discount Amount
+  vat_amt:
+    name: VAT Amount
+    type: number
+    column: vat_amt
+    desc: VAT Amount
+  inventory_onhand_quantity:
+    name: Inventory Onhand Quantity
+    type: number
+    column: inventory_onhand_quantity
+    desc: Inventory Onhand Quantity
+  inventory_onhand_retail_amount:
+    name: Inventory Onhand Retail Amount
+    type: number
+    column: inventory_onhand_retail_amount
+    desc: Inventory Onhand Retail Amount
+  inventory_onhand_cost_amount:
+    name: Inventory Onhand Cost Amount
+    type: number
+    column: inventory_onhand_cost_amount
+    desc: Inventory Onhand Cost Amount
+  inventory_intransit_quantity:
+    name: Inventory Intransit Quantity
+    type: number
+    column: inventory_intransit_quantity
+    desc: Inventory Intransit Quantity
+  inventory_onorder_quantity:
+    name: Inventory Onorder Quantity
+    type: number
+    column: inventory_onorder_quantity
+    desc: Inventory Onorder Quantity
+  inventory_markup_quantity:
+    name: Inventory Markup Quantity
+    type: number
+    column: inventory_markup_quantity
+    desc: Inventory Markup Quantity
+  inventory_markup_amount:
+    name: Inventory Markup Amount
+    type: number
+    column: inventory_markup_amount
+    desc: Inventory Markup Amount
+  inventory_markup_cancel_quantity:
+    name: Inventory Markup Cancel Quantity
+    type: number
+    column: inventory_markup_cancel_quantity
+    desc: Inventory Markup Cancel Quantity
+  inventory_markup_cancel_amount:
+    name: Inventory Markup Cancel Amount
+    type: number
+    column: inventory_markup_cancel_amount
+    desc: Inventory Markup Cancel Amount
+  inventory_markdown_quantity:
+    name: Inventory Markdown Quantity
+    type: number
+    column: inventory_markdown_quantity
+    desc: Inventory Markdown Quantity
+  inventory_markdown_amount:
+    name: Inventory Markdown Amount
+    type: number
+    column: inventory_markdown_amount
+    desc: Inventory Markdown Amount
+  inventory_markdown_cancel_quantity:
+    name: Inventory Markdown Cancel Quantity
+    type: number
+    column: inventory_markdown_cancel_quantity
+    desc: Inventory Markdown Cancel Quantity
+  inventory_markdown_cancel_amount:
+    name: Inventory Markdown Cancel Amount
+    type: number
+    column: inventory_markdown_cancel_amount
+    desc: Inventory Markdown Cancel Amount
+  inventory_adjustment_quantity:
+    name: Inventory Adjustment Quantity
+    type: number
+    column: inventory_adjustment_quantity
+    desc: Inventory Adjustment Quantity
+  inventory_adjustment_cost_amount:
+    name: Inventory Adjustment Cost Amount
+    type: number
+    column: inventory_adjustment_cost_amount
+    desc: Inventory Adjustment Cost Amount
+  inventory_adjustment_retail_amount:
+    name: Inventory Adjustment Retail Amount
+    type: number
+    column: inventory_adjustment_retail_amount
+    desc: Inventory Adjustment Retail Amount
+  inventory_receipt_quantity:
+    name: Inventory Receipt Quantity
+    type: number
+    column: inventory_receipt_quantity
+    desc: Inventory Receipt Quantity
+  inventory_receipt_cost_amount:
+    name: Inventory Receipt Cost Amount
+    type: number
+    column: inventory_receipt_cost_amount
+    desc: Inventory Receipt Cost Amount
+  inventory_receipt_retail_amount:
+    name: Inventory Receipt Retail Amount
+    type: number
+    column: inventory_receipt_retail_amount
+    desc: Inventory Receipt Retail Amount
+  inventory_intransit_retail_amount:
+    name: Inventory Intransit Retail Amount
+    type: number
+    column: inventory_intransit_retail_amount
+    desc: Inventory Intransit Retail Amount
+  inventory_intransit_cost_amount:
+    name: Inventory Intransit Cost Amount
+    type: number
+    column: inventory_intransit_cost_amount
+    desc: Inventory Intransit Cost Amount
+  inventory_onorder_retail_amount:
+    name: Inventory Onorder Retail Amount
+    type: number
+    column: inventory_onorder_retail_amount
+    desc: Inventory Onorder Retail Amount
+  inventory_onorder_cost_amount:
+    name: Inventory Onorder Cost Amount
+    type: number
+    column: inventory_onorder_cost_amount
+    desc: Inventory Onorder Cost Amount
+  inventory_rtv_quantity:
+    name: Inventory RTV Quantity
+    type: number
+    column: inventory_rtv_quantity
+    desc: Inventory RTV Quantity
+  inventory_rtv_cost_amount:
+    name: Inventory RTV Cost Amount
+    type: number
+    column: inventory_rtv_cost_amount
+    desc: Inventory RTV Cost Amount
+  inventory_rtv_retail_amount:
+    name: Inventory RTV Retail Amount
+    type: number
+    column: inventory_rtv_retail_amount
+    desc: Inventory RTV Retail Amount
+  inventroy_transfer_reserved_quantity:
+    name: Inventory Transfer Reserved Quantity
+    type: number
+    column: inventroy_transfer_reserved_quantity
+    desc: Inventory Transfer Reserved Quantity
+  inventory_customer_reserved_quantity:
+    name: Inventory Customer Reserved Quantity
+    type: number
+    column: inventory_customer_reserved_quantity
+    desc: Inventory Customer Reserved Quantity
+  inventory_non_sellable_quantity:
+    name: Inventory Non Sellable Quantity
+    type: number
+    column: inventory_non_sellable_quantity
+    desc: Inventory Non Sellable Quantity
+  inventory_transfer_in_quantity:
+    name: Inventory Transfer In Quantity
+    type: number
+    column: inventory_transfer_in_quantity
+    desc: Inventory Transfer In Quantity
+  inventory_transfer_in_cost_amount:
+    name: Inventory Transfer In Cost Amount
+    type: number
+    column: inventory_transfer_in_cost_amount
+    desc: Inventory Transfer In Cost Amount
+  inventory_transfer_in_retail_amount:
+    name: Inventory Transfer In Retail Amount
+    type: number
+    column: inventory_transfer_in_retail_amount
+    desc: Inventory Transfer In Retail Amount
+  inventory_transfer_out_quantity:
+    name: Inventory Transfer Out Quantity
+    type: number
+    column: inventory_transfer_out_quantity
+    desc: Inventory Transfer Out Quantity
+  inventory_transfer_out_cost_amount:
+    name: Inventory Transfer Out Cost Amount
+    type: number
+    column: inventory_transfer_out_cost_amount
+    desc: Inventory Transfer Out Cost Amount
+  inventory_transfer_out_retail_amount:
+    name: Inventory Transfer Out Retail Amount
+    type: number
+    column: inventory_transfer_out_retail_amount
+    desc: Inventory Transfer Out Retail Amount
+  inventory_boh_quantity:
+    name: Inventory BOH Quantity
+    type: number
+    column: inventory_boh_quantity
+    desc: Inventory BOH Quantity
+  inventory_boh_cost_amount:
+    name: Inventory BOH Cost Amount
+    type: number
+    column: inventory_boh_cost_amount
+    desc: Inventory BOH Cost Amount
+  inventory_boh_retail_amount:
+    name: Inventory BOH Retail Amount
+    type: number
+    column: inventory_boh_retail_amount
+    desc: Inventory BOH Retail Amount

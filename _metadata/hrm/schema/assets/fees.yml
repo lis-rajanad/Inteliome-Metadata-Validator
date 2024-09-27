@@ -1,0 +1,145 @@
+subject_area: fees
+table_info:
+  - table: fees_t
+    joins: []
+columns:
+    internal_id:
+      name: Internal ID
+      type: integer
+      column: internal_id
+      desc: Internal identifier for the fee entry
+      primary_key: true
+    project_name_link:
+      name: Project Name Link
+      type: varchar
+      column: project_name_link
+      desc: project name link
+      primary_key: false
+    category:
+      name: Category
+      type: varchar
+      column: category
+      desc: Category of the fee
+      primary_key: false
+    name:
+      name: Name
+      type: varchar
+      column: name
+      desc: Name of the fee
+      primary_key: false
+    project_country:
+      name: Project Country
+      type: varchar
+      column: project_country
+      desc: Country where the project is located
+      primary_key: false
+    geo:
+      name: Geo
+      type: varchar
+      column: geo
+      desc: Geographical region of the project
+      primary_key: false
+    customer_name:
+      name: Customer Name
+      type: varchar
+      column: customer_name
+      desc: Name of the customer
+      primary_key: false
+    customer_tier:
+      name: Customer Tier
+      type: varchar
+      column: customer_tier
+      desc: Tier of the customer
+      primary_key: false
+    client_short_name:
+      name: Client Short Name
+      type: varchar
+      column: client_short_name
+      desc: Short name of the client
+      primary_key: false
+    sales_rep:
+      name: Sales Rep
+      type: varchar
+      column: sales_rep
+      desc: Sales representative handling the project
+      primary_key: false
+    project:
+      name: Project
+      type: varchar
+      column: project
+      desc: Name of the project
+      primary_key: false
+    project_code:
+      name: Project Code
+      type: varchar
+      column: project_code
+      desc: Code of the project
+      primary_key: false
+    project_start_date:
+      name: Project Start Date
+      type: date
+      column: project_start_date
+      desc: Start date of the project
+      primary_key: false
+    project_end_date:
+      name: Project End Date
+      type: date
+      column: project_end_date
+      desc: End date of the project
+      primary_key: false
+    project_id:
+      name: Project ID
+      type: varchar
+      column: project_id
+      desc: Identifier for the project
+      primary_key: false
+    project_type:
+      name: Project Type
+      type: varchar
+      column: project_type
+      desc: Type of the project
+      primary_key: false
+    project_backlog_type:
+      name: Project Backlog Type
+      type: varchar
+      column: project_backlog_type
+      desc: Backlog type of the project
+      primary_key: false
+    line_of_business:
+      name: Line of Business
+      type: varchar
+      column: line_of_business
+      desc: Line of business for the project
+      primary_key: false
+    opportunity_status:
+      name: Opportunity Status
+      type: varchar
+      column: opportunity_status
+      desc: Status of the opportunity
+      primary_key: false
+    currency:
+      name: Currency
+      type: varchar
+      column: currency
+      desc: Currency of the revenue
+    month:
+      name: Month
+      type: varchar
+      column: month
+      desc: Month of the fee entry.
+      primary_key: false
+    year:
+      name: Year
+      type: number
+      column: year
+      desc: Year of the fee entry
+    forex_rate:
+      name: Forex Rate
+      type: number
+      column: forex_rate
+      desc: Foreign exchange rate applied
+    revenue:
+      name: Revenue
+      type: number
+      column: revenue
+      desc: Revenue amount
